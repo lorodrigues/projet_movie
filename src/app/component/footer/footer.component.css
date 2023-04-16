@@ -1,0 +1,30 @@
+footer {
+    background-color: #f2f2f2;
+    padding: 20px;
+    text-align: center;
+    margin-top: 50px;
+  }
+  
+  footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: inline-block;
+  }
+  
+  footer ul li {
+    display: inline-block;
+    margin-right: 20px;
+  }
+  
+  footer ul li a {
+    color: #333;
+    text-decoration: none;
+  }
+  
+  footer p {
+    font-size: 14px;
+    color: #999;
+    margin-top: 10px;
+  }
+  

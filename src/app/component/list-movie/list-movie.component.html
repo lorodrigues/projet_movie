@@ -1,0 +1,18 @@
+
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <h1 class="text-center mb-4">Film Populaire</h1>
+      </div>
+    </div>
+  
+        <div class="card-deck">
+          <div class="card"  *ngFor="let movie of movies">
+            <img class="card-img-top" src="https://image.tmdb.org/t/p/w500{{movie.poster_path}}" alt="{{movie.title}} poster">
+            <div class="card-body">
+              <h5 class="card-title">{{movie.title}}</h5>
+              <p class="card-text">{{movie.release_date}}</p>
+              <a [routerLink]="['/details', movie.id]"><button class="btn btn-primary">Plus de détails</button></a>
+            </div>
+          </div>
+        </div>

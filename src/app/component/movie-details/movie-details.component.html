@@ -1,0 +1,19 @@
+<div class="movie-details" *ngIf="movie">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="haut">
+          <h2>{{ movie.title }}</h2>
+          <p><strong>Date de sortie : </strong>{{ movie.release_date }}</p>
+          <p><strong>Note : </strong>{{ movie.vote_average }}/10</p>
+          <p>{{ movie.overview }}</p>
+          <p><strong>Genres : </strong><span *ngFor="let genre of movie.genres">,{{genre.name}}</span></p> <!-- Ajout de la boucle ngFor -->
+          <br><button type="button" class="btn btn-warning" [routerLink]="['/favoris']" (click)="addToFavorites(movie)">Ajouter aux favoris</button><br>
+      
+          
+        </div>
+      </div>
+      <div class="col-md-4">
+        <img src="https://image.tmdb.org/t/p/w500{{ movie.poster_path }}" alt="{{ movie.title }}" />
+    </div>
+  </div>
+  

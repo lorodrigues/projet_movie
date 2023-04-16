@@ -1,0 +1,14 @@
+<div class="container">
+    <h1>Mes Favoris</h1>
+    <div class="row">
+      <div class="col-md-4" *ngFor="let film of favo">
+        <div class="card">
+          <img src="https://image.tmdb.org/t/p/w500{{ film.poster_path }}" class="card-img-top" alt="{{ film.title }}" />
+          <div class="card-body">
+            <h5 class="card-title">{{ film.title }}</h5>
+            <p class="card-text">{{ film.overview }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
